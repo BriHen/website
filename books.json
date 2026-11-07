@@ -1,10 +1,18 @@
 {
   "source": "Goodreads public shelf RSS",
   "profile_url": "https://www.goodreads.com/user/show/191979846-brian-heneghan",
-  "shelves": {"currently-reading": [], "to-read": [], "read": []},
+  "shelves": {
+    "currently-reading": [],
+    "to-read": [],
+    "read": []
+  },
   "shelf_updated": {},
-  "sync_errors": [],
-  "last_attempt": null,
+  "sync_errors": [
+    "currently-reading",
+    "to-read",
+    "read"
+  ],
+  "last_attempt": "2026-11-07T20:26:54.122224+00:00",
   "profile_snapshot": {
     "date": "2026-11-07",
     "currently_reading": 4,
