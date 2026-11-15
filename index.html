@@ -9,20 +9,49 @@
 </head>
 <body><div class="wrap">
 <header><div class="brand">BRIHEN / READING LOG</div><a href="https://www.goodreads.com/user/show/191979846-brian-heneghan" target="_blank" rel="noopener">View Goodreads profile ↗</a></header>
-<h1>Between the covers.</h1><p class="lead">My reading journey, synced from Goodreads when the public bookshelf feed is available.</p>
-<div class="cards"><div class="card"><strong id="year">—</strong><span>Books finished in 2026</span></div><div class="card"><strong id="current">—</strong><span>Currently reading</span></div><div class="card"><strong id="want">—</strong><span>Want to read</span></div><div class="card"><strong id="read">—</strong><span>Read (all time)</span></div></div>
+<h1>Between the covers.</h1><p class="lead">My reading journey, automatically updated from my public Goodreads profile and bookshelves.</p>
+<div class="cards"><div class="card"><strong id="year">—</strong><span id="yearLabel">Books finished this year</span></div><div class="card"><strong id="current">—</strong><span>Currently reading</span></div><div class="card"><strong id="want">—</strong><span>Want to read</span></div><div class="card"><strong id="read">—</strong><span>Read (all time)</span></div></div>
 <div id="notice" class="notice">Loading Goodreads data…</div>
 <div class="tabrow" role="tablist" aria-label="Bookshelves"><button class="tab active" data-shelf="currently-reading">Currently reading</button><button class="tab" data-shelf="to-read">Want to read</button><button class="tab" data-shelf="read">Books read</button></div>
 <div class="toolbar"><h2 id="tableTitle">Currently reading</h2><input id="search" placeholder="Search title or author" aria-label="Search books"></div>
 <div class="tablewrap"><table><thead><tr><th>Book</th><th>Author</th><th>My rating</th><th id="dateHeading">Date added</th></tr></thead><tbody id="rows"></tbody></table><div id="empty" class="empty" hidden></div></div>
-<footer>Source: <a href="https://www.goodreads.com/user/show/191979846-brian-heneghan">Goodreads public profile</a>. Yearly total is taken from the Goodreads 2026 Reading Challenge snapshot when live shelf data is incomplete. Goodreads is not affiliated with this site.</footer>
+<footer>Source: <a href="https://www.goodreads.com/user/show/191979846-brian-heneghan">Goodreads public profile</a> and bookshelves. Yearly totals use the public Reading Challenge when available. Goodreads widgets do not provide finish dates. Goodreads is not affiliated with this site.</footer>
 </div><script>
 let data={},active='currently-reading';const labels={'currently-reading':'Currently reading','to-read':'Want to read','read':'Books read'};
 const el=id=>document.getElementById(id);
 function safeUrl(url){try{let u=new URL(url);return u.protocol==='https:'?u.href:'#'}catch{return '#'}}
 function put(tag,text,cls){let n=document.createElement(tag);n.textContent=text??'';if(cls)n.className=cls;return n}
 function render(){let shelf=data.shelves?.[active]||[],q=el('search').value.toLowerCase().trim();el('tableTitle').textContent=labels[active];el('dateHeading').textContent=active==='read'?'Finished':'Date added';el('rows').replaceChildren();let shown=shelf.filter(x=>(x.title+' '+x.author).toLowerCase().includes(q));shown.sort((a,b)=>(active==='read'?(b.date_read||'').localeCompare(a.date_read||''):(b.date_added||'').localeCompare(a.date_added||'')));
-for(let x of shown){let tr=document.createElement('tr'),td=document.createElement('td');if(x.cover){let img=document.createElement('img');img.className='cover';img.alt='';img.loading='lazy';img.src=safeUrl(x.cover);td.append(img)}let a=put('a',x.title);a.href=safeUrl(x.url);a.target='_blank';a.rel='noopener';td.append(a);tr.append(td,put('td',x.author||'—'),put('td',x.rating>0?'★'.repeat(Math.min(x.rating,5)):'—'),put('td',active==='read'?(x.date_read||'—'):(x.date_added||'—')));el('rows').append(tr)}el('empty').hidden=shown.length!==0;el('empty').textContent=shelf.length===0?'No detailed shelf data available yet. The automatic Goodreads sync may still be blocked.': 'No books match your search.';}
-async function init(){try{let response=await fetch('books.json?cache='+Date.now());if(!response.ok)throw Error('Missing books.json');data=await response.json();let s=data.shelves||{},snap=data.profile_snapshot||{};el('current').textContent=s['currently-reading']?.length? s['currently-reading'].length:(snap.currently_reading??'—');el('want').textContent=s['to-read']?.length?s['to-read'].length:(snap.to_read??'—');el('read').textContent=s.read?.length?s.read.length:(snap.read??'—');let dated=(s.read||[]).filter(b=>(b.date_read||'').startsWith('2026')).length;let full=!!data.shelf_updated?.read;el('year').textContent=full?dated:(snap.reading_challenge_2026??'—');let time=data.shelf_updated?.read;let details=Object.keys(data.shelf_updated||{});let msg=details.length?'Last detailed shelf sync: '+new Date(Math.max(...Object.values(data.shelf_updated).map(Date.parse))).toLocaleString()+'.':'Detailed shelf data has not synced yet.';if(data.sync_errors?.length)msg+=' Some shelf updates failed; previous successful data is retained.';if(!full)msg+=' 2026 total is a Goodreads profile snapshot from '+snap.date+', not a live count.';else msg+=' 2026 total counts books with a 2026 finish date; books without dates are excluded.';el('notice').textContent=msg;render()}catch(e){el('notice').textContent='Book data could not load: '+e.message}}
+for(let x of shown){let tr=document.createElement('tr'),td=document.createElement('td');if(x.cover){let img=document.createElement('img');img.className='cover';img.alt='';img.loading='lazy';img.src=safeUrl(x.cover);td.append(img)}let a=put('a',x.title);a.href=safeUrl(x.url);a.target='_blank';a.rel='noopener';td.append(a);tr.append(td,put('td',x.author||'—'),put('td',x.rating>0?'★'.repeat(Math.min(x.rating,5)):'—'),put('td',active==='read'?(x.date_read||'—'):(x.date_added||'—')));el('rows').append(tr)}el('empty').hidden=shown.length!==0;el('empty').textContent=shelf.length===0?(data.shelf_updated?.[active]?'This shelf is empty.':'No detailed shelf data available yet. The automatic Goodreads sync may still be blocked.'):'No books match your search.';}
+async function init(){
+  try{
+    const response=await fetch('books.json?cache='+Date.now());
+    if(!response.ok)throw Error('Missing books.json');
+    data=await response.json();
+    const s=data.shelves||{},snap=data.profile_snapshot||{},updated=data.shelf_updated||{};
+    const year=new Date().getFullYear(),challenge=snap['reading_challenge_'+year];
+    el('yearLabel').textContent='Books finished in '+year;
+    for(const [card,shelf,key] of [['current','currently-reading','currently_reading'],['want','to-read','to_read'],['read','read','read']]){
+      const profileNewer=snap.updated_at&&(!updated[shelf]||Date.parse(snap.updated_at)>=Date.parse(updated[shelf]));
+      el(card).textContent=profileNewer&&snap[key]!=null?snap[key]:(updated[shelf]?(s[shelf]||[]).length:(snap[key]??'—'));
+    }
+    const rss=data.shelf_sources?.read==='Goodreads public shelf RSS';
+    const dated=(s.read||[]).filter(b=>(b.date_read||'').startsWith(year+'-')).length;
+    el('year').textContent=challenge??(rss?dated:'—');
+    const times=Object.values(updated).map(Date.parse).filter(Number.isFinite);
+    let msg=times.length?'Last detailed shelf sync: '+new Date(Math.min(...times)).toLocaleString()+'.':'Detailed shelf data has not synced yet.';
+    if(snap.updated_at)msg+=' Profile totals checked: '+new Date(snap.updated_at).toLocaleString()+'.';
+    if(challenge!=null)msg+=' '+year+' total comes from the Goodreads Reading Challenge, checked '+(snap.challenge_date||snap.date)+'.';
+    else if(rss)msg+=' Yearly total counts finish dates; books without dates are excluded.';
+    else msg+=' The current year’s Reading Challenge total is unavailable.';
+    if(Object.values(data.shelf_sources||{}).some(source=>source.includes('widget')))msg+=' Finish dates are unavailable from bookshelf widgets.';
+    const errors=Object.keys(data.sync_error_details||{});
+    if(data.sync_errors?.length||errors.length)msg+=' Some updates failed ('+[...new Set([...(data.sync_errors||[]),...errors])].join(', ')+'); previous successful data is retained.';
+    const last=Date.parse(data.last_attempt),fresh=times.length===3?Math.min(...times):NaN;
+    if(!Number.isFinite(last)||Date.now()-last>48*60*60*1000||!Number.isFinite(fresh)||Date.now()-fresh>48*60*60*1000)msg+=' Automatic updates are overdue or incomplete.';
+    el('notice').textContent=msg;
+    render();
+  }catch(e){el('notice').textContent='Book data could not load: '+e.message}
+}
 document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{active=b.dataset.shelf;document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t===b));render()}));el('search').addEventListener('input',render);init();
 </script></body></html>
