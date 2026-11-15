@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.diagnostics/
+_site/
+books.json.tmp
