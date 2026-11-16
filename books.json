@@ -138,17 +138,6 @@
         "url": "https://www.goodreads.com/book/show/246617837"
       },
       {
-        "id": "220817728",
-        "review_id": "8484522286",
-        "title": "Atmosphere",
-        "author": "Taylor Jenkins Reid",
-        "rating": 0,
-        "date_read": "",
-        "date_added": "",
-        "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1730469032l/220817728._SY75_.jpg",
-        "url": "https://www.goodreads.com/book/show/220817728"
-      },
-      {
         "id": "186074",
         "review_id": "8448764923",
         "title": "The Name of the Wind",
@@ -1682,22 +1671,22 @@
     ]
   },
   "shelf_updated": {
-    "currently-reading": "2026-11-15T19:01:59.170361+00:00",
-    "to-read": "2026-11-15T19:01:59.170361+00:00",
-    "read": "2026-11-15T19:01:59.170361+00:00"
+    "currently-reading": "2026-11-16T06:37:33.404799+00:00",
+    "to-read": "2026-11-16T06:37:33.404799+00:00",
+    "read": "2026-11-16T06:37:33.404799+00:00"
   },
   "sync_errors": [],
-  "last_attempt": "2026-11-15T19:01:59.170361+00:00",
+  "last_attempt": "2026-11-16T06:37:33.404799+00:00",
   "profile_snapshot": {
-    "date": "2026-11-15",
-    "updated_at": "2026-11-15T19:01:59.170361+00:00",
-    "to_read": 16,
+    "date": "2026-11-16",
+    "updated_at": "2026-11-16T06:37:33.404799+00:00",
+    "to_read": 15,
     "currently_reading": 3,
     "read": 133,
     "reading_challenge_2026": 69,
     "reading_goal_2026": 50,
-    "challenge_date": "2026-11-15",
-    "challenge_updated_at": "2026-11-15T19:01:59.170361+00:00"
+    "challenge_date": "2026-11-16",
+    "challenge_updated_at": "2026-11-16T06:37:33.404799+00:00"
   },
   "shelf_sources": {
     "currently-reading": "Goodreads public bookshelf widget",
