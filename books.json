@@ -4,6 +4,17 @@
   "shelves": {
     "currently-reading": [
       {
+        "id": "90202302",
+        "review_id": "9054727482",
+        "title": "Iron Flame",
+        "author": "Rebecca Yarros",
+        "rating": 0,
+        "date_read": "",
+        "date_added": "",
+        "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1706724269l/90202302._SY75_.jpg",
+        "url": "https://www.goodreads.com/book/show/90202302"
+      },
+      {
         "id": "34536488",
         "review_id": "8862429198",
         "title": "Principles: Life and Work",
@@ -81,17 +92,6 @@
         "date_added": "",
         "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1624897234l/57693406._SY75_.jpg",
         "url": "https://www.goodreads.com/book/show/57693406"
-      },
-      {
-        "id": "90202302",
-        "review_id": "9054727482",
-        "title": "Iron Flame",
-        "author": "Rebecca Yarros",
-        "rating": 0,
-        "date_read": "",
-        "date_added": "",
-        "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1706724269l/90202302._SY75_.jpg",
-        "url": "https://www.goodreads.com/book/show/90202302"
       },
       {
         "id": "29588376",
@@ -1671,22 +1671,22 @@
     ]
   },
   "shelf_updated": {
-    "currently-reading": "2026-11-17T07:59:24.023917+00:00",
-    "to-read": "2026-11-17T07:59:24.023917+00:00",
-    "read": "2026-11-17T07:59:24.023917+00:00"
+    "currently-reading": "2026-11-17T20:59:14.447463+00:00",
+    "to-read": "2026-11-17T20:59:14.447463+00:00",
+    "read": "2026-11-17T20:59:14.447463+00:00"
   },
   "sync_errors": [],
-  "last_attempt": "2026-11-17T07:59:24.023917+00:00",
+  "last_attempt": "2026-11-17T20:59:14.447463+00:00",
   "profile_snapshot": {
     "date": "2026-11-17",
-    "updated_at": "2026-11-17T07:59:24.023917+00:00",
-    "to_read": 15,
-    "currently_reading": 3,
+    "updated_at": "2026-11-17T20:59:14.447463+00:00",
+    "to_read": 14,
+    "currently_reading": 4,
     "read": 133,
     "reading_challenge_2026": 69,
     "reading_goal_2026": 50,
     "challenge_date": "2026-11-17",
-    "challenge_updated_at": "2026-11-17T07:59:24.023917+00:00"
+    "challenge_updated_at": "2026-11-17T20:59:14.447463+00:00"
   },
   "shelf_sources": {
     "currently-reading": "Goodreads public bookshelf widget",
