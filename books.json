@@ -50,6 +50,39 @@
     ],
     "to-read": [
       {
+        "id": "182506390",
+        "review_id": "9121364281",
+        "title": "Someone You Can Build a Nest In",
+        "author": "John Wiswell",
+        "rating": 0,
+        "date_read": "",
+        "date_added": "",
+        "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1696859120l/182506390._SY75_.jpg",
+        "url": "https://www.goodreads.com/book/show/182506390"
+      },
+      {
+        "id": "196262577",
+        "review_id": "9121332333",
+        "title": "Ocean's Godori",
+        "author": "Elaine U. Cho",
+        "rating": 0,
+        "date_read": "",
+        "date_added": "",
+        "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1695573090l/196262577._SY75_.jpg",
+        "url": "https://www.goodreads.com/book/show/196262577"
+      },
+      {
+        "id": "10357575",
+        "review_id": "9121318806",
+        "title": "1Q84",
+        "author": "Haruki Murakami",
+        "rating": 0,
+        "date_read": "",
+        "date_added": "",
+        "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483103331l/10357575._SX50_.jpg",
+        "url": "https://www.goodreads.com/book/show/10357575"
+      },
+      {
         "id": "13928",
         "review_id": "9104774673",
         "title": "Daughter of the Forest",
@@ -1671,22 +1704,22 @@
     ]
   },
   "shelf_updated": {
-    "currently-reading": "2026-11-21T07:16:09.680343+00:00",
-    "to-read": "2026-11-21T07:16:09.680343+00:00",
-    "read": "2026-11-21T07:16:09.680343+00:00"
+    "currently-reading": "2026-11-21T19:21:24.259861+00:00",
+    "to-read": "2026-11-21T19:21:24.259861+00:00",
+    "read": "2026-11-21T19:21:24.259861+00:00"
   },
   "sync_errors": [],
-  "last_attempt": "2026-11-21T07:16:09.680343+00:00",
+  "last_attempt": "2026-11-21T19:21:24.259861+00:00",
   "profile_snapshot": {
     "date": "2026-11-21",
-    "updated_at": "2026-11-21T07:16:09.680343+00:00",
-    "to_read": 14,
+    "updated_at": "2026-11-21T19:21:24.259861+00:00",
+    "to_read": 17,
     "currently_reading": 4,
     "read": 133,
     "reading_challenge_2026": 69,
     "reading_goal_2026": 50,
     "challenge_date": "2026-11-21",
-    "challenge_updated_at": "2026-11-21T07:16:09.680343+00:00"
+    "challenge_updated_at": "2026-11-21T19:21:24.259861+00:00"
   },
   "shelf_sources": {
     "currently-reading": "Goodreads public bookshelf widget",
