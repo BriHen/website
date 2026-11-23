@@ -50,6 +50,28 @@
     ],
     "to-read": [
       {
+        "id": "1857440",
+        "review_id": "9126783129",
+        "title": "John Dies at the End",
+        "author": "David  Wong",
+        "rating": 0,
+        "date_read": "",
+        "date_added": "",
+        "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1189289716l/1857440._SY75_.jpg",
+        "url": "https://www.goodreads.com/book/show/1857440"
+      },
+      {
+        "id": "62039305",
+        "review_id": "9126771902",
+        "title": "Raw Dog: The Naked Truth About Hot Dogs",
+        "author": "Jamie Loftus",
+        "rating": 0,
+        "date_read": "",
+        "date_added": "",
+        "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1665471313l/62039305._SY75_.jpg",
+        "url": "https://www.goodreads.com/book/show/62039305"
+      },
+      {
         "id": "182506390",
         "review_id": "9121364281",
         "title": "Someone You Can Build a Nest In",
@@ -1704,22 +1726,22 @@
     ]
   },
   "shelf_updated": {
-    "currently-reading": "2026-11-23T07:45:34.999427+00:00",
-    "to-read": "2026-11-23T07:45:34.999427+00:00",
-    "read": "2026-11-23T07:45:34.999427+00:00"
+    "currently-reading": "2026-11-23T23:57:40.346881+00:00",
+    "to-read": "2026-11-23T23:57:40.346881+00:00",
+    "read": "2026-11-23T23:57:40.346881+00:00"
   },
   "sync_errors": [],
-  "last_attempt": "2026-11-23T07:45:34.999427+00:00",
+  "last_attempt": "2026-11-23T23:57:40.346881+00:00",
   "profile_snapshot": {
     "date": "2026-11-23",
-    "updated_at": "2026-11-23T07:45:34.999427+00:00",
-    "to_read": 17,
+    "updated_at": "2026-11-23T23:57:40.346881+00:00",
+    "to_read": 19,
     "currently_reading": 4,
     "read": 133,
     "reading_challenge_2026": 69,
     "reading_goal_2026": 50,
     "challenge_date": "2026-11-23",
-    "challenge_updated_at": "2026-11-23T07:45:34.999427+00:00"
+    "challenge_updated_at": "2026-11-23T23:57:40.346881+00:00"
   },
   "shelf_sources": {
     "currently-reading": "Goodreads public bookshelf widget",
