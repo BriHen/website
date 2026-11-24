@@ -1726,22 +1726,22 @@
     ]
   },
   "shelf_updated": {
-    "currently-reading": "2026-11-24T09:58:52.478968+00:00",
-    "to-read": "2026-11-24T09:58:52.478968+00:00",
-    "read": "2026-11-24T09:58:52.478968+00:00"
+    "currently-reading": "2026-11-24T22:30:05.432996+00:00",
+    "to-read": "2026-11-24T22:30:05.432996+00:00",
+    "read": "2026-11-24T22:30:05.432996+00:00"
   },
   "sync_errors": [],
-  "last_attempt": "2026-11-24T09:58:52.478968+00:00",
+  "last_attempt": "2026-11-24T22:30:05.432996+00:00",
   "profile_snapshot": {
     "date": "2026-11-24",
-    "updated_at": "2026-11-24T09:58:52.478968+00:00",
+    "updated_at": "2026-11-24T22:30:05.432996+00:00",
     "to_read": 19,
     "currently_reading": 4,
     "read": 133,
     "reading_challenge_2026": 69,
     "reading_goal_2026": 50,
     "challenge_date": "2026-11-24",
-    "challenge_updated_at": "2026-11-24T09:58:52.478968+00:00"
+    "challenge_updated_at": "2026-11-24T22:30:05.432996+00:00"
   },
   "shelf_sources": {
     "currently-reading": "Goodreads public bookshelf widget",
