@@ -624,6 +624,17 @@
         "url": "https://www.goodreads.com/book/show/59054912"
       },
       {
+        "id": "35959740",
+        "review_id": "8582534117",
+        "title": "Circe",
+        "author": "Madeline Miller",
+        "rating": 5,
+        "date_read": "",
+        "date_added": "",
+        "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565909496l/35959740._SY75_.jpg",
+        "url": "https://www.goodreads.com/book/show/35959740"
+      },
+      {
         "id": "50659467",
         "review_id": "8537104937",
         "title": "A Court of Thorns and Roses",
@@ -1350,17 +1361,6 @@
         "url": "https://www.goodreads.com/book/show/230846729"
       },
       {
-        "id": "217502561",
-        "review_id": "8241521570",
-        "title": "Azarinth Healer: Book Four",
-        "author": "Rhaegar",
-        "rating": 5,
-        "date_read": "",
-        "date_added": "",
-        "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1723740628l/217502561._SY75_.jpg",
-        "url": "https://www.goodreads.com/book/show/217502561"
-      },
-      {
         "id": "60111529",
         "review_id": "8238693786",
         "title": "The Primal Hunter",
@@ -1722,26 +1722,37 @@
         "date_added": "",
         "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1700426477l/202408939._SY75_.jpg",
         "url": "https://www.goodreads.com/book/show/202408939"
+      },
+      {
+        "id": "217502561",
+        "review_id": "8241521570",
+        "title": "Azarinth Healer: Book Four",
+        "author": "Rhaegar",
+        "rating": 5,
+        "date_read": "",
+        "date_added": "",
+        "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1723740628l/217502561._SY75_.jpg",
+        "url": "https://www.goodreads.com/book/show/217502561"
       }
     ]
   },
   "shelf_updated": {
-    "currently-reading": "2026-11-25T08:42:53.260266+00:00",
-    "to-read": "2026-11-25T08:42:53.260266+00:00",
-    "read": "2026-11-25T08:42:53.260266+00:00"
+    "currently-reading": "2026-11-25T21:45:15.525606+00:00",
+    "to-read": "2026-11-25T21:45:15.525606+00:00",
+    "read": "2026-11-25T21:45:15.525606+00:00"
   },
   "sync_errors": [],
-  "last_attempt": "2026-11-25T08:42:53.260266+00:00",
+  "last_attempt": "2026-11-25T21:45:15.525606+00:00",
   "profile_snapshot": {
     "date": "2026-11-25",
-    "updated_at": "2026-11-25T08:42:53.260266+00:00",
+    "updated_at": "2026-11-25T21:45:15.525606+00:00",
     "to_read": 19,
     "currently_reading": 4,
-    "read": 133,
-    "reading_challenge_2026": 69,
+    "read": 134,
+    "reading_challenge_2026": 70,
     "reading_goal_2026": 50,
     "challenge_date": "2026-11-25",
-    "challenge_updated_at": "2026-11-25T08:42:53.260266+00:00"
+    "challenge_updated_at": "2026-11-25T21:45:15.525606+00:00"
   },
   "shelf_sources": {
     "currently-reading": "Goodreads public bookshelf widget",
